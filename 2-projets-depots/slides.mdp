@@ -1,4 +1,4 @@
-%title: GITLAB
+%title: GITLAB - dépôt
 %author: xavki
 
 -> GITLAB : un projet <-
@@ -22,7 +22,7 @@
 
 -------------------------------------------------------------
 
--> Projet : Page principale <-
+-> Projet : Page principale (dépot) <-
 
 * le dépot similaire à Github :
 	- command line avec git (facilité avec le partage de clefs ssh)
