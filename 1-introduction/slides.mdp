@@ -1,0 +1,87 @@
+%title: GITLAB
+%author: xavki
+
+-> GITLAB <-
+=========
+
+* préféfrence à github 
+
+
+
+* gitlab : 
+	- repository git
+	- wiki
+	- ticketing (issues)
+	- pages statiques
+	- registry docker
+	- gitlab CI (intégration continue)
+	- gestion ACL fine
+
+* unités de base :
+	- users
+	- groupes (ensemble de users)
+	- projets
+
+* projets :
+	- utilisés par des users/groupes
+	- publics / interne / privé
+		- publics : tout le monde
+		- interne : identification gitlab
+		- private : groupes/users
+
+-----------------------------------------------------------
+
+-> Installation clasique <-
+
+* par les sources :
+
+Etapes: 	
+    Ruby
+    Go
+    Node
+    System Users
+    Database
+    Redis
+    GitLab
+    Nginx
+
+-----------------------------------------------------------
+
+-> Installation docker <-
+
+fichier docker-compose.yml
+docker-compose up -d --build
+
+```
+ version: "3.6"
+ services:
+   gitlab:
+     image: gitlab/gitlab-ce:latest
+     ports:
+       - "22:22"
+       - "80:80"
+       - "443:443"
+     volumes:
+	# important pour ne pas perdre les datas
+       - /srv/gitlab/data:/var/opt/gitlab
+       - /srv/gitlab/logs:/var/log/gitlab
+       - /srv/gitlab/config:/etc/gitlab
+     environment:
+       GITLAB_OMNIBUS_CONFIG: "from_file('/omnibus_config.rb')"
+     configs:
+       - source: gitlab
+         target: /omnibus_config.rb
+     secrets:
+       - gitlab_root_password
+   gitlab-runner:
+     image: gitlab/gitlab-runner:alpine
+     deploy:
+       mode: replicated
+       replicas: 4
+ configs:
+   gitlab:
+     file: ./gitlab.rb
+ secrets:
+   gitlab_root_password:
+     file: ./root_password.txt
+```
