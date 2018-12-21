@@ -1,0 +1,48 @@
+%title: GITLAB
+%author: xavki
+
+-> GITLAB : un projet <-
+=========
+
+* appartenir à un user ou un groupe
+	- impact sur l'url du projet
+
+
+* public / interne / privée
+	- public : ouvert à tout le monde
+	- interne : uniquement identifié
+	- private : seulement groupe/user member
+
+
+* roles :
+	- invité (guest) : lire et commenter issues
+	- reporter : gestion issues et lecture code
+	- developper : modifier issues et dépôts
+	- master
+
+-------------------------------------------------------------
+
+-> Projet : Page principale <-
+
+* le dépot similaire à Github :
+	- command line avec git (facilité avec le partage de clefs ssh)
+	- outil graphique
+	- directement sur le site
+
+* lien ssh ou http : pour git clone
+
+* liste déroulante avec les branches
+
+* notification
+
+* forker : copier le projet (dépôt) dans votre espace perso (faire des modifs éventuellement proposer leur intégration)
+
+* dernier commit
+
+* README : si il y en a un en markdown (.md)
+
+
+
+
+
+
