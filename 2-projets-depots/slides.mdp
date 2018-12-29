@@ -4,6 +4,7 @@
 -> GITLAB : un projet <-
 =========
 
+<br>
 * appartenir à un user ou un groupe
 	- impact sur l'url du projet
 
@@ -23,6 +24,8 @@
 -------------------------------------------------------------
 
 -> Projet : Page principale (dépot) <-
+
+
 
 * le dépot similaire à Github :
 	- command line avec git (facilité avec le partage de clefs ssh)
