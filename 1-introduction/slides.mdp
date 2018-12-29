@@ -4,10 +4,9 @@
 -> GITLAB <-
 =========
 
-* préféfrence à github 
+* préférence à github 
 
-
-
+<br>
 * gitlab : 
 	- repository git
 	- wiki
@@ -17,11 +16,13 @@
 	- gitlab CI (intégration continue)
 	- gestion ACL fine
 
+<br>
 * unités de base :
 	- users
 	- groupes (ensemble de users)
 	- projets
 
+<br>
 * projets :
 	- utilisés par des users/groupes
 	- publics / interne / privé
@@ -49,7 +50,6 @@ Etapes:
 
 -> Installation docker <-
 
-fichier docker-compose.yml
 docker-compose up -d --build
 
 ```
@@ -62,7 +62,6 @@ docker-compose up -d --build
        - "80:80"
        - "443:443"
      volumes:
-	# important pour ne pas perdre les datas
        - /srv/gitlab/data:/var/opt/gitlab
        - /srv/gitlab/logs:/var/log/gitlab
        - /srv/gitlab/config:/etc/gitlab
