@@ -1,0 +1,59 @@
+%title: GITLAB - docker registry
+%author: xavki
+
+-> GITLAB : registry docker <-
+=========
+
+<br>
+* deuxième dépôt après repository git
+
+* stockage par projet et gestion des ACL (token si nécessaire)
+
+* sotckage limité sur gitlab en ligne
+
+<br>
+* installation nécessaire pour un gitlab privé :
+
+	- installation regsitry docker : !volume de stockage
+
+```
+docker run -d -p 5000:5000 --restart=always --name registry -v /mnt/registry:/var/lib/registry registry:2
+```
+
+	- configuration gitlab privé :
+
+```
+https://docs.gitlab.com/omnibus/architecture/registry/
+```
+
+
+-------------------------------------------------------------------------------------------------------------
+
+
+-> Utilisation dela registry <-
+
+
+<br>
+* connexion à la registry gitlab :
+
+```
+	docker login registry.gitlab.com
+	docker build -t registry.gitlab.com/priximmo/demonstration-xavki .
+	docker push registry.gitlab.com/priximmo/demonstration-xavki
+	docker run -tid --name monconteneur registry.gitlab.com/priximmo/demonstration-xavki
+```
+
+* 3 niveaux de noms :
+
+```
+registry.gitlab.com/priximmo/demonstration-xavki:tag
+registry.gitlab.com/priximmo/demonstration-xavki/optional-image-name:tag
+registry.gitlab.com/priximmo/demonstration-xavki/optional-name/optional-image-name:tag
+```
+
+
+
+
+
+
+
