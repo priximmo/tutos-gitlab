@@ -1,0 +1,54 @@
+%title: GITLAB - Merge request
+%author: xavki
+
+-> GITLAB : Merge Request <-
+=========
+
+<br>
+Déjà vu:
+
+* présentation générale
+
+* repository : dépôt git
+
+* registry : dépôt images docker
+
+* Issues
+
+<br>
+* mise à jour de branche participative
+
+* faire des demandes d'intégration de commit d'autres branches
+
+* demander à intégrer une évolution avec des commentaires
+
+* organistation de travail (dev / prod)
+
+
+
+-> Contenu <-
+
+
+<br>
+* titre / commentaires
+
+
+* numéro de commit
+
+
+* commentaire
+
+
+* titre
+
+
+* assignation
+
+
+* branche source vers branche cible
+
+
+* différents signalement à l'assigné (label, milestone)
+
+
+* approuveurs (validation, nombre d'approbations)
