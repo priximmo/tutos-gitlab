@@ -1,0 +1,70 @@
+%title: GITLAB - Issues
+%author: xavki
+
+-> GITLAB : Issues (ticket) <-
+=========
+
+<br>
+Déjà vu:
+
+* présentation générale
+
+* repository : dépôt git
+
+* registry : dépôt images docker
+
+<br>
+* système de ticketing comme Redmine (intégration autres outils gitlab)
+
+* fonctionnement par PROJET
+
+<br>
+* Issues :
+	- List : liste des tickets
+	- Boards : Tableaux de bords (personnalisable)
+	- Labels : Catégoriser les tickets
+	- Service desk : Envoi par mail de ticket
+	- Milestone : Etapes & taches de plusieurs tickets
+
+----------------------------------------------------------------------------------------
+
+-> Liste <-
+
+
+* Création
+
+* Edition
+
+* Tris
+
+* Recherche
+
+<br>
+-> Boards <-
+
+
+* Par défaut : éditable
+
+* Personnalisable en fonction des labels, milestone, users... 
+
+* Création issues possibles
+
+
+<br>
+-> Labels <-
+
+* Catégories 
+
+* Pour ticket et merge requests 
+
+<br>
+-> Service desk <-
+
+* mail pour alimenter les ticket
+
+
+<br>
+-> Milestone <-
+
+
+* Mini projet géré par étapes avec deadlines
